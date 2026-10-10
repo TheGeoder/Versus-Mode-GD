@@ -1,0 +1,15 @@
+{
+    "geode": "4.0.0",
+    "id": "yourname.mymobilemod",
+    "version": "1.0.0",
+    "name": "My Mobile Mod",
+    "developer": "Your Name",
+    "description": "My first mobile Geode mod written completely on my phone!",
+    "dependencies": [
+        {
+            "id": "geode.loader",
+            "version": ">=4.0.0",
+            "importance": "required"
+        }
+    ]
+}
