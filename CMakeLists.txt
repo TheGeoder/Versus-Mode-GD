@@ -10,7 +10,7 @@ find_package(Geode REQUIRED)
 add_geode_mod(
     ${PROJECT_NAME}
     SOURCES
-        main.cpp
+        src/main.cpp
 )
 
 # 4. (Optional) If you have any image sprites/assets, uncomment the line below:
