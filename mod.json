@@ -3,13 +3,16 @@
     "id": "yourname.mymobilemod",
     "version": "1.0.0",
     "name": "Versus Mode",
-    "developer": "tniutiblety",
+    "developer": "tniuriblety",
     "description": "The Versus Mode is a fanmade version of the versus mode that is supposed to release in 2.3.",
-    "dependencies": [
-        {
-            "id": "geode.loader",
+    "dependencies": {
+        "geode.loader": {
             "version": ">=4.0.0",
             "importance": "required"
+        },
+        "dankmeme.globed2": {
+            "version": ">=2.0.0",
+            "importance": "required"
         }
-    ]
-}
+    }
+
