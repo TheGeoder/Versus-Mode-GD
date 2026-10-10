@@ -1,18 +1,18 @@
 {
-    "geode": "4.0.0",
+    "geode": "5.0.0",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
     "id": "yourname.mymobilemod",
     "version": "1.0.0",
-    "name": "Versus Mode",
-    "developer": "tniuriblety",
-    "description": "The Versus Mode is a fanmade version of the versus mode that is supposed to release in 2.3.",
+    "name": "My Mobile Mod",
+    "developer": "Your Name",
+    "description": "My mod that links to Globed on 2.2081!",
     "dependencies": {
-        "geode.loader": {
-            "version": ">=4.0.0",
-            "importance": "required"
-        },
-        "dankmeme.globed2": {
-            "version": ">=2.0.0",
-            "importance": "required"
-        }
+        "geode.loader": ">=5.0.0",
+        "dankmeme.globed2": ">=2.0.0"
     }
-
+}
