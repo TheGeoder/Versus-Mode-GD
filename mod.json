@@ -2,9 +2,9 @@
     "geode": "4.0.0",
     "id": "yourname.mymobilemod",
     "version": "1.0.0",
-    "name": "My Mobile Mod",
-    "developer": "Your Name",
-    "description": "My first mobile Geode mod written completely on my phone!",
+    "name": "Versus Mode",
+    "developer": "tniutiblety",
+    "description": "The Versus Mode is a fanmade version of the versus mode that is supposed to release in 2.3.",
     "dependencies": [
         {
             "id": "geode.loader",
