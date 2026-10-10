@@ -1,18 +1,40 @@
 name: Build Geode Mod
-on: [push, workflow_dispatch]
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         config:
+          - name: Android32
+            os: ubuntu-latest
+            target: Android32
           - name: Android64
             os: ubuntu-latest
             target: Android64
+
+    name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
+
     steps:
       - uses: actions/checkout@v4
-      - name: Build the mod
+
+      - name: Build Mod
         uses: geode-sdk/build-geode-mod@main
         with:
           target: ${{ matrix.config.target }}
+
+  package:
+    name: Package Mod
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: geode-sdk/build-geode-mod/combine@main
+
